@@ -1,0 +1,201 @@
+{
+	"info": {
+		"_postman_id": "99d47a42-5450-45b2-a8d4-271061ba0d9b",
+		"name": "atividadePW3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "listarEspecialidade",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome_especialidade\" : \"Clinico Geral\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3005/listarEspecialidades",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"listarEspecialidades"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CadastrarEspecialidade",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome_especialidade\" : \"Clinico Geral\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3005/cadastrarEspecialidade",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"cadastrarEspecialidade"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome_especialidade\" : \"Clinico Editado\",\r\n    \"cod_especialidade\" : \"1\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:3005/atualizarEspecialidade",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"atualizarEspecialidade"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListarCodEspecialidade",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "ExcluirEspecialidade",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cod_especialidade\" : \"2\",\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3005/cadastrarMedico",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"cadastrarMedico"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CadastrarMedico",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome_medico\" : \"Senhor Galvão\",\r\n    \"email_medico\" : \"cristian@gmail.com\",\r\n    \"telefone_medico\" : \"48236913\",\r\n    \"celular_medico\" : \"11998927895\",\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3005/cadastrarMedico",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"cadastrarMedico"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListarMedicoPorId",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "ListarTodosMedicos",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "ExcluirMedico",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cod_medico\" : \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3005/excluirMedico",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"excluirMedico"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AtualizarMedico",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
